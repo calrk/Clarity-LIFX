@@ -4,12 +4,13 @@ var app = module.exports = express();
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var whiteColor = 0x0dac;
+var open = require('open');
 
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/client/'))
-app.listen(80);
+app.listen(5000);
 
 
 app.post('/lights', function (req, res, next){
@@ -21,5 +22,7 @@ app.post('/lights', function (req, res, next){
   }
   res.send(200);
 });
+
+open('http://localhost:5000');
 
 console.log('listening');

@@ -91,7 +91,7 @@ function render(){
 	cooldown ++;
 	if(cooldown > refreshRate){
 		// console.log('posting: ' + hsv);
-		$.post('http://localhost/lights', {hsv:hsv}, function(err, res){
+		$.post('http://localhost:5000/lights', {hsv:hsv}, function(err, res){
 			// console.log(res);
 		});
 		cooldown = 0;
