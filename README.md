@@ -32,12 +32,20 @@ It Then averages the position value of all the pixels where motion is detected, 
 
 Options
 -------
-Simulate: If you don't have a bulb, it will colour the camera output to simulate what it would look like.
-Posts to Server: Limits the amount of times that it will update the colour of the bulb, to reduce the number of changes/traffic.
+####Simulate: 
+If you don't have a bulb, it will colour the camera output to simulate what it would look like.
 
-Motion Detector - frame count: Changes the number of frames that the motion detector will detect movement between
+####Posts to Server: 
+Limits the amount of times that it will update the colour of the bulb, to reduce the number of changes/traffic.
 
-Value Thresholder - inverted: Will invert the black/white, which could be useful if there is a lot of movement in a scene, to detect areas that don't move.
-Value Thresholder - threshold: Changes the threshold value, lower will detect more movement, higher will detect less.
+####Motion Detector - frame count: 
+Changes the number of frames that the motion detector will detect movement between
 
-LIFX - Show Field: will render out the YUV colour space, so you can see what areas map to which colours.
+####Value Thresholder - inverted: 
+Will invert the black/white, which could be useful if there is a lot of movement in a scene, to detect areas that don't move.
+
+####Value Thresholder - threshold: 
+Changes the threshold value, lower will detect more movement, higher will detect less.
+
+####LIFX - Show Field: 
+Will render out the YUV colour space, so you can see what areas map to which colours.
